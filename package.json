@@ -1,0 +1,24 @@
+{
+  "name": "tcetdev",
+  "version": "1.0.0",
+  "description": "Its a medical website with end to end facilities",
+  "main": "index.js",
+  "dependencies": {
+    "firebase": "^9.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwalapc/tcetdev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwalapc/tcetdev/issues"
+  },
+  "homepage": "https://github.com/jwalapc/tcetdev#readme"
+}

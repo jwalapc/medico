@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+      <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title>Lab Test</title>
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    #Sale_Section {
+      display: flex;
+      justify-content: center;
+      align-content:flex-start;
+      width: 1586px;
+      height: 244px;
+      /* background-color: #ffffff; */
+      margin: 60px 0px 20px 0px;
+      }
+#dot{
+    color: black;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      /* margin: 20px 500px 0px 0px; */
+    }
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Spartan', sans-serif;;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #53c68c;
+  max-height: 70px;
+}
+
+nav img {
+  height: 120px;
+  width: 120px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  margin-top: -17px;
+}
+
+.nav-links ul li {
+  padding-top: 3%;
+  list-style: none;
+  display: inline-block;
+  padding-right: 7%;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13 px;
+}
+
+nav .fas {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #53c68c;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -250px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fas {
+    display: block;
+    color: #fff;
+    margin-top: 6%;
+    margin-right: 6%;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+
+.order{
+   background-color: #F8F8F8;
+   text-align: center;
+   width: 100%;
+   margin: auto;
+   padding-top: 167px;
+}
+.order-col{
+   flex-basis: 30%;
+   border-radius: 10px;
+   /* margin-right: 4%;
+   margin-left: 4%; */
+   margin-bottom: 50px;
+   position: relative;
+   overflow: hidden;
+   transition: 0.5s;
+}
+.order-col:hover{
+   box-shadow:0 0 20px 0 rgba(107, 94, 94, 0.2);
+}
+.order-col img{
+   width: 100%;
+   display: block;
+}
+.imgbook{
+  width:500px;
+}.order-col .buymedbtn{
+   position: absolute;
+   text-decoration: none;
+   top: 89%;
+   left: 47%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   background-color: #5ad6c4;
+   color: white;
+   font-size: 16px;
+   padding: 12px 24px;
+   border:black;
+   cursor:pointer;
+   border-radius:5px;
+}
+ .order-col .buyhcbtn{
+   position: absolute;
+   text-decoration: none;
+   top: 89%;
+   left: 47%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   background-color: #5ad6c4;
+   color: white;
+   font-size: 16px;
+   padding: 12px 24px;
+   border: black;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ .order-col .buyltbtn {
+   position: absolute;
+   text-decoration: none;
+   top: 89%;
+   left: 47%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   background-color: #5ad6c4;
+   color: white;
+   font-size: 16px;
+   padding: 12px 24px;
+   border:black;
+   cursor: pointer;
+   border-radius: 5px;
+ }
+ 
+.row{
+   margin-top: 5%;
+   display: flex;
+   justify-content:space-between;
+ }
+ @media (max-width:700px){
+   .row{
+      flex-direction: column;
+   }
+}
+/* //Flash-Cards// */
+.flashcards{
+   background-color: #F8F8F8;
+   width: 100%;
+   margin:auto;
+   text-align: center;
+   padding-top: 40px;
+   padding-bottom: 20px;
+}
+
+.cards-col {
+   text-align: left;
+   flex: 60%;
+   padding: 5px;
+   border-radius: 10px;
+   margin-left: 3%;
+   margin-right: 3%;
+   margin-bottom: 50px;
+   position: relative;
+   overflow: hidden;
+}
+.cards-col img{
+   height:100%;
+   width: 100%;
+   display: flex;
+   border-radius: 10px;
+   transition: transform .4s;
+}
+.cards-col:hover {
+   -ms-transform: scale(1.04); 
+   -webkit-transform: scale(1.04); 
+   transform: scale(1.04);
+   background-color: #5ad6c4; 
+ }
+.cards-col .btn {
+   position: absolute;
+   top: 74%;
+   left: 23%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-decoration: none;
+   background-color: transparent;
+   color: white;
+   font-size: 15px;
+   padding: 12px 24px;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   text-align: center;
+ }
+ .btn::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background:#fff;
+   display: block;
+   margin: auto;
+   transition: 0.4s;
+}
+ .btn:hover::after{
+   width: 100%;
+ }
+.order-col{
+   height: 350px;
+   width: 500px;
+   border: black;
+   box-shadow: rgb(105, 245, 110);
+}
+*::before, *::after{
+margin:0;
+padding: 0;
+box-sizing: inherit;
+}
+
+.faq{
+   width: 100%;
+   height: 100vh;
+   background-color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container{
+   width: 100%;
+   max-width: 80rem;
+   margin: 0 auto;
+   padding: 0 1.5rem;
+}
+
+.accordion-item{
+   border-radius: .4rem;
+   margin-bottom: 1 rem;
+   padding: 1rem;
+   box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+}
+
+.accordion-link{
+   font-size: 1.6rem;
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem 0;
+}
+
+.accordion-link i{
+   color:black;
+   padding: .5rem;
+}
+
+.accordion-link .lni-chevron-up{
+   display: none;
+}
+ 
+.ans{
+   max-height: 0;
+   overflow: hidden;
+   position: relative;
+}
+
+.ans ::before{
+   content: "";
+   position: absolute;
+   width: .6rem;
+   height: 90%;
+   background-color:#22764c ;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+}
+
+.ans p{
+   font-size: 1.4rem;
+   color:black;
+   padding: 2rem;
+}
+
+.accordion-item:target .ans{
+   max-height: 20rem;
+
+}
+
+.accordion-item:target .accordion-link .lni-chevron-down{
+   display: none;
+}
+
+.accordion-item:target .accordion-link .lni-chevron-up{
+   display: block;
+}
+@media (max-width:600px )and (min-width:300px){
+  #Sale_Section{
+    display: none;
+  }
+
+}
+</style>
+<body>
+    <section class="header">
+        <nav>
+            <a href="shop.html"><img src="images/Logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <input type="text" class="nav-search" placeholder="Search..">
+                    <li><a href="index.html"><i class="lni lni-offer"></i>Home</a></li>
+                    <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+                    <li><a href="index.html"><i class="fa fa-fw fa-user"></i>Login / Sign-up</a></li>
+                    <li><a href="cart.html"><i class="uil uil-shopping-cart"></i> Cart </a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        </section>
+    <section id="Sale_Section">
+        <div class="sale_slideshow">
+            <a class="prev" onclick="plusSlides(-1)"></a><div class="mySlides fade">
+            <a href="#"
+              target="_blank"><img
+                src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/114544534/original/6f215c8b616a1d476fca4f22117e422d448b2557/make-attractive-ads-for-your-medicine.jpg"
+                height="300px" width="1100px"></a> <!-- Inline css-->
+            <!-- <div class="text">Caption Text</div> -->
+          </div>
+    
+          <div class="mySlides fade">
+            <a href="#" target="_blank">
+              <img src="https://www.healthyads.com/wp-content/uploads/2018/12/st-judes-research-hospital-970x250-medical-ads.jpg" height="300px" width="1100px"></a> <!-- Inline css-->
+            <!-- <div class="text">Caption Two</div> -->
+          </div>
+    
+          <div class="mySlides fade">
+            <a href="#" target="_blank"> <img
+                src="https://image.shutterstock.com/image-photo/long-banner-medical-utensils-advertising-260nw-1907184505.jpg"height="300px" width="1100px"></a>
+            <!-- Inline css-->
+            <!-- <div class="text">Caption Three</div> -->
+          </div>
+    
+          <div class="mySlides fade"><a href="https://www.lg.com/in/appliances" target="_blank">
+              <img src="https://pharmaceuticals.gov.in/sites/default/files/bannerss2.png"
+                height="300px" width="1100px"></a> <!-- Inline css-->
+            <!-- <div class="text">Caption four</div> -->
+          <!-- </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        </div>
+        <br>
+        </div>
+      </section>
+      <!-- <div style="text-align:center" id="DOT">
+        Inline css
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div> -->
+      <section class="order">
+        <div class="row">
+           <div class="order-col">
+            <img src="images/COVID.png.png" alt="" class="imgbook" >
+              <a href="https://rzp.io/l/GQlMZIl" class="buymedbtn">Book now</a>
+           </div>
+           <!-- https://rzp.io/l/GQlMZIl   the link for the razorpay interface -->
+           <div class="order-col">
+              <img src="images/ECG.png" alt=""class="imgbook">
+              <a href="https://rzp.io/l/GQlMZIl" class="buyhcbtn">book now</a>
+           </div>
+           <div class="order-col">
+              <img src="images/full body.png" alt="" class="imgbook">
+              <a href="https://rzp.io/l/GQlMZIl" class="buyltbtn">Book now</a>
+           </div>
+        </div>
+     </section>
+
+     </section>
+     <section class="faq">
+        <div class="container">
+           <div class="accordion">
+              <div class="accordion-item" id="q1">
+                <a class="accordion-link" href="#q1"> What are your hours of operation?
+                  <i class="lni lni-chevron-down"></i>
+                  <i class="lni lni-chevron-up"></i>
+                </a>
+                <div class="ans">
+                  <p> Our website is open 24 hours a day, 7 days a week. 
+                  Call Centre support is available from Monday to Saturday, 
+                  08:30 am to 09:00 pm IST and on Sunday's From 09:00 am - 05:00 pm IST.</p>
+                </div>
+              </div>
+   
+              <div class="accordion-item" id="q2">
+               <a class="accordion-link" href="#q2"> Do you accept any Insurance plans?
+                 <i class="lni lni-chevron-down"></i>
+                 <i class="lni lni-chevron-up"></i>
+               </a>
+               <div class="ans">
+                   <p> No, we do not accept any insurance plans.
+                   However, we can provide invoice and receipt towards your order to claim your insurance.
+                    But, in most cases, you will find our low-priced medications to be of great value compared with that of your insurance plan.</p>
+               </div>
+             </div>
+   
+             <div class="accordion-item" id="q3">
+               <a class="accordion-link" href="#q3">Why is the image shown on the website different from the item I received?
+                 <i class="lni lni-chevron-down"></i>
+                 <i class="lni lni-chevron-up"></i>
+               </a>
+               <div class="ans">
+                 <p> Although we make every effort to ensure product images on our website are identical to the item you receive,
+                occasionally actual product colour may vary from the image shown.
+                 We cannot guarantee the accurate representation of the product because not all computer monitors may have the same colour settings.
+                Please note that product image on our site is for illustrative purpose only.</p>
+               </div>
+             </div>
+           </div>
+        </div>
+      </section>
+
+      <script>
+          var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+    }
+    var navLinks = document.getElementById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+      </script>
+</body>
+</html>

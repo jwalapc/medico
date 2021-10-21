@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Frequently Asked Questions(FAQs)</title>
+   <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+       <a href="#"><img src="images/Logo.png" alt=""></a>
+       <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <input type="text" class="nav-search" placeholder="Search..">
+             <li><a href="index.html"><i class="uil uil-estate"></i> Home</a></li>
+             <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+             <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</button></li>
+             <li><a href="#"><i class="uil uil-shopping-cart"></i>Cart</a></li>
+          </ul>
+       </div>
+       <script type="text/javascript">
+         function sign() {
+            console.log("sign");
+         }
+      </script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+      <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+            apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+            authDomain: "tcetdev.firebaseapp.com",
+            projectId: "tcetdev",
+            storageBucket: "tcetdev.appspot.com",
+            messagingSenderId: "323333761920",
+            appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+            measurementId: "G-0KHX2EJ3BR"
+            };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+      </script>
+      <script src="./scripts/auth.js"></script>
+      <script src="./scripts/firestore-db.js"></script>
+       <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!--Frequently Asked Questions(FAQs)-->
+
+    <section class="faq">
+      <div class="container">
+         <div class="accordion">
+            <div class="accordion-item" id="q1">
+              <a class="accordion-link" href="#q1"> What are your hours of operation?
+                <i class="lni lni-chevron-down"></i>
+                <i class="lni lni-chevron-up"></i>
+              </a>
+              <div class="ans">
+                <p> Our website is open 24 hours a day, 7 days a week. 
+                Call Centre support is available from Monday to Saturday, 
+                08:30 am to 09:00 pm IST and on Sunday's From 09:00 am - 05:00 pm IST.</p>
+              </div>
+            </div>
+ 
+            <div class="accordion-item" id="q2">
+             <a class="accordion-link" href="#q2"> Do you accept any Insurance plans?
+               <i class="lni lni-chevron-down"></i>
+               <i class="lni lni-chevron-up"></i>
+             </a>
+             <div class="ans">
+                 <p> No, we do not accept any insurance plans.
+                 However, we can provide invoice and receipt towards your order to claim your insurance.
+                  But, in most cases, you will find our low-priced medications to be of great value compared with that of your insurance plan.</p>
+             </div>
+           </div>
+ 
+           <div class="accordion-item" id="q3">
+             <a class="accordion-link" href="#q3">Why is the image shown on the website different from the item I received?
+               <i class="lni lni-chevron-down"></i>
+               <i class="lni lni-chevron-up"></i>
+             </a>
+             <div class="ans">
+               <p> Although we make every effort to ensure product images on our website are identical to the item you receive,
+              occasionally actual product colour may vary from the image shown.
+               We cannot guarantee the accurate representation of the product because not all computer monitors may have the same colour settings.
+              Please note that product image on our site is for illustrative purpose only.</p>
+             </div>
+           </div>
+         </div>
+      </div>
+    </section>
+  </section>
+</section>
+<section class="footer">
+   <div class="foot">
+      <div class="foot-content">
+         <div class="foot-shop">
+            <h3>Home</h3><br><br>
+         <ul>
+            <li><a href="shop.html#essentials">Covid-19 Essentials</a></li><br>
+            <li><a href="shop.html#mom&care">Mom & Baby Health care</a></li><br>
+            <li><a href="shop.html#Ayurvedic">Ayurvedic</a></li><br>
+            <li><a href="hcp.html#Emergency">Emergency Kit</a></li><br>
+         </ul>
+         </div>
+         <div class="foot-company">
+            <h3>Company</h3><br><br>
+            <ul>
+               <li><a href="#">Careers</a></li><br>
+               <li><a href="#">Blog</a></li><br>
+               <li><a href="#">Partner with medico</a></li><br>
+               <li><a href="#">Sell at medico</a></li><br>
+            </ul>
+         </div>
+           <div class="foot-help">
+            <h3>Need Help?</h3><br><br>
+            <ul>
+               <li><a href="FAQs.html">FAQs</a></li><br>
+              <li><a href="mailto: khushiy0842@gmail.com">Contact us</a></li><br>
+            </ul>
+        </div>
+        <div class="icons">
+           <h3>Follow us</h3>
+         <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+         <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+         <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+         <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+         &copy; medico.com | Made with <i class="lni lni-heart"></i> by TCETDEV
+      </div>
+   </div>
+</section>
+   <!--Javascript for toggle menu-->
+   <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+       navLinks.style.right="0";
+    }
+    function hideMenu(){
+       navLinks.style.right="-200px";
+    }
+ </script>
+  
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="shortcut icon" href="images/Logo.png" sizes="16x16"  type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <title>MEDICO</title>
+   <link rel="stylesheet" href="home.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+   <script src="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.js"></script>
+   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.css" />
+</head>
+
+<body>
+   <section class="header">
+      <nav>
+         <a href="#"><img src="images/Logo.png" alt=""></a>
+         <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+               <li><a href="ocr.html"><i class="uil uil-capture"></i>Upload</a></button></li>
+               <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+               <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</button></li>
+               <li><a href="cart.html"><i class="uil uil-shopping-cart"></i>Cart</a></li>
+            </ul>
+         </div>
+         <script type="text/javascript">
+            function sign() {
+               console.log("sign");
+            }
+         </script>
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+         <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+               apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+               authDomain: "tcetdev.firebaseapp.com",
+               projectId: "tcetdev",
+               storageBucket: "tcetdev.appspot.com",
+               messagingSenderId: "323333761920",
+               appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+               measurementId: "G-0KHX2EJ3BR"
+               };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+         </script>
+         <script src="./scripts/auth.js"></script>
+         <script src="./scripts/firestore-db.js"></script>
+         <script src="./scripts/suggestions.js"></script>
+         <script src="./scripts/script.js"></script>
+         <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="wrapper">
+         <div class="search-input">
+           <a href="" target="_blank" hidden></a>
+           <input type="text" placeholder="Type to search..">
+           <div class="autocom-box">
+             <!-- here list are inserted from javascript -->
+           </div>
+           <div class="icon"><i class="fas fa-search"></i></div>
+         </div>
+       </div>
+   
+       <script src="js/suggestions.js"></script>
+       <script src="js/script.js"></script>
+   
+   </section>
+   <!--Javascript for toggle menu-->
+   <script>
+      var navLinks = document.getElementById("navLinks")
+      function showMenu() {
+         navLinks.style.right = "0";
+      }
+      function hideMenu() {
+         navLinks.style.right = "-200px";
+      }
+   </script>
+   <!--Order-->
+   <section class="order">
+      <div class="row">
+         <div class="order-col">
+            <img src="images/Order medicines.png" alt="">
+            <a href="shop.html" class="buymedbtn">Order now</a>
+         </div>
+         <div class="order-col">
+            <img src="images/2.png" alt="">
+            <a href="hcp.html" class="buyhcbtn">Order now</a>
+         </div>
+         <div class="order-col">
+            <img src="images/3.png" alt="">
+            <a href="labtest.html" class="buyltbtn">Book now</a>
+         </div>
+      </div>
+   </section>
+   <!--Flash-Cards-->
+   <section class="flashcards">
+      <div class="row">
+         <div class="cards-col">
+            <img src="images/sale.png" alt="">
+            <a href="#" class="btn">Read More</a>
+         </div>
+
+         <div class="cards-col">
+            <img src="images/secure delivery.png" alt="">
+            <a href="#" class="btn">Read More</a>
+         </div>
+
+         <div class="cards-col">
+            <img src="images/free shipping.png" alt="">
+            <a href="#" class="btn">Read More</a>
+         </div>
+      </div>
+   </section>
+   <!--Products-->
+   <section class="product">
+      <h2>Products</h2>
+      <div class="row">
+         <div class="prdct-col">
+            <a href="shop.html#essentials">
+               <img src="images/p1.png" alt="">
+            </a>
+         </div>
+         <div class="prdct-col">
+            <a href="shop.html#mom&care">
+               <img src="images/babycare.jpg" alt="">
+            </a>
+         </div>
+         <div class="prdct-col">
+            <a href="shop.html#Ayurvedic">
+               <img src="images/ayur.png" alt="">
+            </a>
+         </div>
+         <div class="prdct-col">
+            <a href="hcp.html#Emergency">
+               <img src="images/EmergencyKit.jpg" alt="">
+            </a>
+         </div>
+      </div>
+   </section>
+   <section class="flashcards2">
+      <div class="row">
+         <div class="cards-col2">
+            <img src="images/appointment.png" alt="">
+            <a href="#" class="btn2">Read More</a>
+         </div>
+
+         <div class="cards-col2">
+            <img src="images/best deals of the week!.png" alt="">
+            <a href="#" class="btn3">Read More</a>
+         </div>
+      </div>
+      <!-- Badge Code - Do Not Change The Code -->
+      <a class="hitCounter" target="_blank" title="Hit counter"
+         data-name="9df4e4d1da956df04f98a628ffe58f93|5|page|1|#ea5050|#ffffff|small|s-hit">Hit Counter</a>
+      <script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() + "'><\/script>");</script>
+      <!-- Badge Code End Here -->
+   </section>
+   <!--Customers-->
+   <section class="customers">
+      <div class="feedbcover"><img src="images/Feedback.png" alt=""></div>
+      <div class="row">
+         <div class="feedb">
+            <img src="images/f1.png" alt="">
+         </div>
+         <div class="feedb">
+            <img src="images/f2.png" alt="">
+         </div>
+         <div class="feedb">
+            <img src="images/f3.png" alt="">
+         </div>
+      </div>
+   </section>
+   <section class="footer">
+      <div class="foot">
+         <div class="foot-content">
+            <div class="foot-shop">
+               <h3>Home</h3><br><br>
+               <ul>
+                  <li><a href="shop.html#essentials">Covid-19 Essentials</a></li><br>
+                  <li><a href="shop.html#mom&care">Mom & Baby Health care</a></li><br>
+                  <li><a href="shop.html#Ayurvedic">Ayurvedic</a></li><br>
+                  <li><a href="hcp.html#Emergency">Emergency Kit</a></li><br>
+               </ul>
+            </div>
+            <div class="foot-company">
+               <h3>Company</h3><br><br>
+               <ul>
+                  <li><a href="#">Careers</a></li><br>
+                  <li><a href="#">Blog</a></li><br>
+                  <li><a href="#">Partner with medico</a></li><br>
+                  <li><a href="#">Sell at medico</a></li><br>
+               </ul>
+            </div>
+            <div class="foot-help">
+               <h3>Need Help?</h3><br><br>
+               <ul>
+                  <li><a href="FAQs.html">FAQs</a></li><br>
+                  <li><a href="mailto: khushiy0842@gmail.com">Contact us</a></li><br>
+               </ul>
+            </div>
+            <div class="icons">
+               <h3>Follow us</h3>
+               <a href="https://www.instagram.com/medicopharma360/"><i class="fab fa-instagram fa-2x"></i></a>
+               <a href="https://www.facebook.com/profile.php?id=100073159119796"><i class="fab fa-facebook-square fa-2x"></i></a>
+               <a href="https://twitter.com/MedicoPharma"><i class="fab fa-twitter-square fa-2x"></i></a>
+               <a href="http://linkedin.com/in/medico-pharma-58843b221"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+         </div>
+         <div class="foot-bottom">
+            &copy; medico.com | Made with <i class="lni lni-heart"></i> by TCETDEV | Hare Krishna
+         </div>
+      </div>
+   </section>
+   <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+         s1.async = true;
+         s1.src = 'https://embed.tawk.to/614e21dcd326717cb6833553/1fgcj8hn4';
+         s1.charset = 'UTF-8';
+         s1.setAttribute('crossorigin', '*');
+         s0.parentNode.insertBefore(s1, s0);
+      })();
+   </script>
+   <!--End of Tawk.to Script-->
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="images/Logo.png" sizes="16x16"  type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ <meta name="viewport" content="with=device-width, initial-scale=1.0">
+ <title>OCR</title>
+ <link rel="stylesheet" href="cart.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+ <script src="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.js"></script>
+    <script src='https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js'></script>
+</head>
+<style>
+#img{
+    margin-top: 30px;
+    height: 500px;
+    margin-left: 290px;
+}
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Spartan', sans-serif;;
+}
+.header{
+   min-height: 100vh;
+   width: 100vw;
+   background-image: url(images/bg2.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+  background-color: #53c68c;
+  max-height: 70px;
+}
+nav img{
+   margin-top: 0%;
+   height: 120px;
+   width: 120px;
+}
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li{
+   padding-top: 3%;
+   list-style: none;
+   display: inline-block;
+   padding-right: 7%;
+   position: relative;
+}
+.nav-links ul li a{
+   color: white;
+   text-decoration: none;
+   font-size: 16 px;
+}
+
+nav .fas{
+  display: none;
+}
+
+.gbtn{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  }
+
+/* SEARCH BAR*/
+.nav-search{
+  width: 200px;
+   border-radius: 15px;
+   border: 1px #000 solid;
+   padding: 5px 5px 5px 25px;
+   top: 0;
+   left: 0;
+   z-index: 5;
+}
+@media(max-width: 1366px){
+  .header{
+     background-color: #fff;
+     overflow: hidden;
+  }
+  .nav-search{
+    width: 95%;
+  }
+    .nav-links ul li{
+     display: block;
+    }
+  .nav-links{
+       position: absolute;
+       background: #53c68c;
+       height: 100vh;
+       width: 200px;
+       top: 0;
+       right: -250px;
+       text-align: left;
+       z-index: 2;
+       transition: 1s;
+    }
+  nav .fas{
+      display: block;
+      color: #fff;
+      margin-top: 10%;
+      margin-right: 8%;
+      padding-right: 16px;
+      font-size: 15px;
+      cursor: pointer; 
+    }
+    .nav-links ul{
+       padding: 30px;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+   .navbar a {
+     float: none;
+     display: block;
+   }
+ }
+ .navbar input[type=text] {
+   float: right;
+   padding: 6px;
+   background-color: white;
+   margin-top: 15px;
+   margin-right: 16px;
+   margin-left: 190 px;
+   padding-right: 5%;
+   border: 2px;
+   border-style: inset;
+   border-radius: 15px;
+   font-size: 17px;
+   color: black;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .navbar a, .navbar input[type=text] {
+     float: none;
+     display: block;
+     text-align: left;
+     width: 100%;
+     margin: 0;
+     padding: 14px;
+   }
+   .navbar input[type=text] {
+     border: 1px solid black;  
+   }
+ }
+.wrapper{
+   min-height: 100vh;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+}
+.nav-search::placeholder{
+   color: black;
+}
+.nav-search::-webkit-input-placeholder{
+   color: black;
+}
+
+.s-btn{
+font-size: 20px;
+background-color: #53c68c;
+border: none;
+color: #fff;
+cursor: pointer;
+}
+.i-btn{
+    margin-top: 30px;
+    margin-left: 450px;
+}
+.i-btn::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.i-btn::before {
+  content: 'Upload Prescription';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.i-btn:hover::before {
+  border-color: black;
+}
+.i-btn:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+</style>
+<body>
+    <section class="header">
+        <nav>
+           <a href="#"><img src="images/Logo.png" alt=""></a>
+           <div class="nav-links" id="navLinks">
+              <i class="fas fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <input type="text" class="nav-search" placeholder="Search..">
+                 <li><a href="index.html"><i class="uil uil-estate"></i> Home</a></li>
+                 <li><a href="offers.html"><i class="lni lni-offer"></i> Offers</a></li>
+                 <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i> Login/ Sign-up</button></li>
+                 <li><a href="#"><i class="uil uil-shopping-cart"></i> Cart</a></li>
+              </ul>
+           </div>
+           <script type="text/javascript">
+             function sign() {
+                console.log("sign");
+             }
+          </script>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+    
+          <script>
+             // Your web app's Firebase configuration
+             var firebaseConfig = {
+                apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+                authDomain: "tcetdev.firebaseapp.com",
+                projectId: "tcetdev",
+                storageBucket: "tcetdev.appspot.com",
+                messagingSenderId: "323333761920",
+                appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+                measurementId: "G-0KHX2EJ3BR"
+                };
+             // Initialize Firebase
+             firebase.initializeApp(firebaseConfig);
+          </script>
+          <script src="./scripts/auth.js"></script>
+          <script src="./scripts/firestore-db.js"></script>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+         <!--Javascript for toggle menu-->
+         <script>
+           var navLinks = document.getElementById("navLinks")
+           function showMenu(){
+              navLinks.style.right="0";
+           }
+           function hideMenu(){
+              navLinks.style.right="-200px";
+           }
+        </script>
+    <img src="images/Intro.gif" alt="image" id="img"> <br>
+    <input type="file" id="inpFile" onchange="loadFile(event)" class="i-btn">
+    <button id="btn" class="s-btn">Submit</button>
+    <br>
+    <p id="output"></p>
+    <script>
+        // to show image in img tag
+        const loadFile = (event) => {
+            var image = document.getElementById('img');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+        // when btn clicked recognize text
+        document.querySelector("#btn").onclick = async () => {
+            let inp = document.querySelector("#inpFile")
+
+            let output = document.querySelector("#output")
+            output.innerText = "Loading text"
+
+            try {
+
+                let text = await Tesseract.recognize(inp.files[0],
+                    'eng'
+                )
+                console.log(text.data.text)
+                output.innerText = text.data.text
+            } catch (e) {
+                output.innerText = "ERROR: sorry try again"
+            }
+        }
+
+    </script>
+    </section>
+</body>
+
+</html>

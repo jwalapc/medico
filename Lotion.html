@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Lotion</title>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tp.css">
+   
+</head>
+<style>
+    #Box{
+        display: inline-block;
+    }
+    #Box2{
+        display: inline-block; 
+        width: 44%; 
+        position: absolute; 
+        margin-top: 65px; 
+        margin-left: 124px;
+    }
+    button
+    {
+        border: none;
+    }
+    @media (max-width: 600px) and (min-width:300px)
+    {
+        
+        .zoom-thumb{
+            display: inline-block;
+            height: 10px;
+        }
+        .img2{
+            display: inline-block;
+           margin-left: -175px;
+           margin-top: -75px;
+        }
+        .image{
+            height: 100px;
+            width: 50px;
+        }
+        .piclist{
+            display: none;
+        }
+        #Box2{
+            display: block;
+            width: 90%;
+            margin-left: -18px;
+
+        }
+        #secdown{
+            margin-top: 420px; 
+            display: block;
+        }
+        .header{
+            background-color: rgb(147, 246, 150);
+            overflow: hidden;
+            
+        }
+        nav{
+      margin-top: 0px;
+
+        }
+       
+    }
+</style>
+<body>
+    <section class="header">
+        <nav>
+           <a href="#"><img src="images/Logo.png" alt=""></a>
+           <div class="nav-links" id="navLinks">
+              <i class="fas fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <input type="text" class="nav-search" placeholder="Search..">
+                <li><a href="index.html"><i class="lni lni-home"></i>Home </a></li>
+                 <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+                 <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</button></li>
+                 <li><a href="#"><i class="uil uil-shopping-cart"></i>Cart</a></li>
+              </ul>
+           </div>
+           <script type="text/javascript">
+            function sign() {
+               console.log("sign");
+            }
+         </script>
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+         <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+               apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+               authDomain: "tcetdev.firebaseapp.com",
+               projectId: "tcetdev",
+               storageBucket: "tcetdev.appspot.com",
+               messagingSenderId: "323333761920",
+               appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+               measurementId: "G-0KHX2EJ3BR"
+               };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+         </script>
+         <script src="./scripts/auth.js"></script>
+         <script src="./scripts/firestore-db.js"></script>
+           <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <section id="services" class="services section-bg">
+       
+           <div class="photo-album" style="margin-left: 9%;">
+              <div class="_boxzoom" id="Box">
+                 <div class="zoom-thumb">
+                    <ul class="piclist">
+                       <li ><img src="images/conditioner2.jfif" alt="" class="img1"></li>
+                       <li ><img src="images/conditioner3.jfif" alt="" class="img1"></li>
+                       <li ><img src="images/conditioner.jpg" alt="" class="img1"></li>
+                       <li><img src="images/conditioner5.jpg" alt="" class="img1"></li>
+                    </ul>
+                 </div>
+                 
+                 <div class="image">
+                     <img src="images/lotion.jpg" class="img2" alt="main" style="height: 380px;">
+                 </div>
+              </div>
+              <div class="col-md-6" id="Box2">
+                 <div class="_product-detail-content">
+                    <p class="_p-name">Lotion</p>
+                    <div class="_p-price-box">
+                       <div class="p-list">
+                          <span> M.R.P. : <i class="fa fa-inr"></i> <del> 750 </del>   </span>
+                          <span class="price"> Rs. 450.00 </span>
+                       </div>
+                       <div class="_p-add-cart">
+                          <div class="_p-qty">
+                             <span>Add Quantity</span>
+                             <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                             <input type="number" name="qty" id="number" value="1" />
+                             <div class="value-button increase_" id="" value="Increase Value">+</div>
+                          </div>
+                       </div>
+                       <div class="_p-features" style="margin: 12px">
+                          <span> Benefits about this product : </span><br>
+                          <div> 
+                           <li> Provides intense moisturizing to the skin </li>
+<li> Facilitates long-lasting moisturizing to the skin </li>
+<li> Shields your skin from the harsh winter with creamy body milk to beautifully soften and smoothens your skin </li>
+
+                        </ul>
+                                                
+                       </div><br>
+                       <br>
+
+                       <form action="" method="post" accept-charset="utf-8">
+                          <ul class="spe_ul"></ul>
+                          <div class="_p-qty-and-cart">
+                             <div class="_p-add-cart">
+                                <button class="btn-theme btn buy-btn" tabindex="0" id="buy-dettol">
+                                 <a href="https://rzp.io/l/jngBeO7"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                              </button>
+                                </button>
+                                <button class="btn-theme btn btn-success" tabindex="0" id="add-dettol">
+                                <i class="fa fa-shopping-cart"></i> Add to Cart
+                                </button>
+                                <input type="hidden" name="pid" value="18" />
+                                <input type="hidden" name="price" value="850" />
+                                <input type="hidden" name="url" value="" />    
+                             </div>
+                          </div>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <section class="sec bg-light" id="secdown">
+        <div class="container">
+           <div class="row">
+              <div class="col-sm-12 title_bx">
+                 <h3 class="title"> You May Also Like </h3>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-12 list-slider mt-4">
+                 <div class="owl-carousel common_wd  owl-theme" id="recent_post">
+                    <!-- <div class="item">
+                       <div class="sq_box shadow">
+                          
+                             <a href="savlon.html">
+                             <img src="savlon spray.jpg"> 
+                             </a>
+                          </div>
+                          <h4 class="mb-1"> <a href="savlon.html"> Savlon</a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 151.50 </span>
+                          
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                             </div>
+                          </div>
+                       </div>
+                    </div> -->
+                    <div class="item">
+                       <div class="sq_box shadow">
+                          <div class="pdis_img"> 
+                             <!-- <span class="wishlist">
+                             <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                             </span> -->
+                             <a href="himalayababypowder.html">
+                             <img src="product card/himalaya baby.jpg"> 
+                             </a>
+                          </div>
+                          <h4 class="mb-1"> <a href="himalayababypowder.html"> Himalaya baby powder</a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i> 200 </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120 </span>
+                          </div>
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="item">
+                       <div class="sq_box shadow">
+                          <div class="pdis_img"> 
+                             <!-- <span class="wishlist">
+                             <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                             </span> -->
+                             <a href="zand nityam.html">
+                             <img src="product card/zandu nityam.jpg"> 
+                             </a>
+                          </div>
+                          <h4 class="mb-1"> <a href="zand nityam.html"> zandu-nityam-vati</a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i> 120.00 </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 89.50 </span>
+                          </div>
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="item">
+                       <div class="sq_box shadow">
+                          <div class="pdis_img"> 
+                             <!-- <span class="wishlist">
+                             <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                             </span> -->
+                             <a href="chawanprash.html">
+                             <img src="product card/Chawanprash.jpg"> 
+                             </a>                          </div>
+                          <h4 class="mb-1"> <a href="chawanprash.html">Dabur Chawanprash </a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i> 450.56 </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 349.00 </span>
+                          </div>
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="item">
+                       <div class="sq_box shadow">
+                          <div class="pdis_img"> 
+                             <!-- <span class="wishlist">
+                             <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                             </span> -->
+                             <a href="triphalachuran.html">
+                             <img src="product card/triphala.jpg"> 
+                             </a>
+                          </div>
+                          <h4 class="mb-1"> <a href="triphalachuran.html"> Triphala Churna </a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i> 250.00 </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 220.50</span>
+                          </div>
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="item">
+                       <div class="sq_box shadow">
+                          <div class="pdis_img"> 
+                             <!-- <span class="wishlist">
+                             <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                             </span> -->
+                             <a href="cerelac.html">
+                             <img src="product card/cerelac.jpg"> 
+                             </a>
+                          </div>
+                          <h4 class="mb-1"> <a href="cerelac.html"> Cerelac powder for Baby  </a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i>549.00  </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 499.00 </span>
+                          </div>
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="item">
+                       <div class="sq_box shadow">
+                          <div class="pdis_img"> 
+                             <!-- <span class="wishlist">
+                             <a alt="Add to Wish List" title="Add to Wish List" href="javascript:void(0);"> <i class="fa fa-heart"></i></a>
+                             </span> -->
+                             <a href="savlon.html">
+                             <img src="product card/savlon spray.jpg"> 
+                             </a>
+                          </div>
+                          <h4 class="mb-1"> <a href="savlon.html"> Savlon Antiseptic Spray </a> </h4>
+                          <div class="price-box mb-2">
+                             <span class="price"> Price <i class="fa fa-inr"></i> 150.00 </span>
+                             <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 120.00 </span>
+                          </div>
+                          <div class="btn-box text-center">
+                             <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <div class="prod_data">
+        <h2>
+            DESCRIPTION
+        </h2>
+
+        <p>
+         <li>Nivea Body Milk Nourishing Body Lotion Say hello to deeply moisturized skin with NIVEA Nourishing Lotion Body Milk. A rich and creamy formula with the combination of Hydra IQ and almond oil provides deep moisture and soft skin.
+         </li>
+
+
+        </p>
+    </div>
+
+
+    <div class="offers">
+        <h2>OFFERS</h2>
+        <ul>
+            <li>Flat 20% off + 20% cashback on your 1st medicine order</li>
+            <lI>KBC Ghar Baithe Jeeto Jackpot! Win Rs.1,00,000</lI>
+            <li><a href="offers.html">View more</a></li>
+        </ul>
+    </div>
+    <div class="Key">
+        <h2>Safety Information:</h2>
+
+
+        <p>
+         Almond-Oil</p>
+    </div>
+    
+    <div class="uses">
+        <h2> Direction for Use/Dosage:</h2>
+
+        <ul>
+
+         <li> Dispense the body lotion into the palm of your hand </li>
+         <li> Gently Massage the lotion onto your skin</li>
+         <li> Apply evenly all over the body</li>
+         <li> Use daily to give your skin the perfect results</li>
+        </ul>
+    </div>
+
+
+    
+    <div class="brand">
+        <h2><b><u>
+                    Features and Details
+                </u></b></h2><br>
+
+        <p>
+            Brand:<a href="https://www.nivea.in/products/body/care/lotion-and-milk" style="color: #00995c;">   Nivea-Lotion</a><br>
+            Manufacturer Name:<a href="https://www.nivea.in/products/body/care/lotion-and-milk"  style="color: #00995c;"> Check Details</a><br>
+
+            Country of Origin : India
+            <br>
+
+
+        </p><br>
+        
+
+    
+    
+    
+            </div>
+    </div>
+   
+    <!--Javascript for toggle menu-->
+   <script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+       navLinks.style.right="0";
+    }
+    function hideMenu(){
+       navLinks.style.right="-200px";
+    }
+</script>
+</body>
+
+</html>

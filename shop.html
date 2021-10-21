@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shopcss.css">
+</head>
+<style>
+ 
+</style>
+
+<body style="    overflow-x: hidden;">
+    <section class="header">
+        <nav>
+            <a href="#"><img src="images/Logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <input type="text" class="nav-search" placeholder="Search..">
+                    <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+                    <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</button></li>
+                    <li><a href="#"><i class="uil uil-shopping-cart"></i>Cart</a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                function sign() {
+                   console.log("sign");
+                }
+             </script>
+             <!-- The core Firebase JS SDK is always required and must be listed first -->
+             <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+             <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+             <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+             <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+    
+             <script>
+                // Your web app's Firebase configuration
+                var firebaseConfig = {
+                   apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+                   authDomain: "tcetdev.firebaseapp.com",
+                   projectId: "tcetdev",
+                   storageBucket: "tcetdev.appspot.com",
+                   messagingSenderId: "323333761920",
+                   appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+                   measurementId: "G-0KHX2EJ3BR"
+                   };
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+             </script>
+             <script src="./scripts/auth.js"></script>
+             <script src="./scripts/firestore-db.js"></script>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!--Javascript for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <!-- <div class="head-product" >
+    </section>  
+    <img src="images/ShopBanner1.png" alt="Banner1" style=" box-shadow: 1px 1px 1px 1px grey; ">
+    </div> -->
+
+
+        <section id="Sale_Section">
+            <div class="sale_slideshow">
+
+                <div class="mySlides fade">
+                    <a href="https://www.boat-lifestyle.com/collections/?utm_source=Google&utm_medium=Search&utm_campaign=SB_Search_Brand_India_Sep2020&gclid=CjwKCAjw9aiIBhA1EiwAJ_GTSvtkELKfB7ncqrRztOL4hrlDI8edRsYCt2Z1ECsagQor3RwFTuyCqxoCUPAQAvD_BwE"
+                        target="_blank"><img
+                            src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/114544534/original/6f215c8b616a1d476fca4f22117e422d448b2557/make-attractive-ads-for-your-medicine.jpg"
+                            height="350px" width="1200px"></a> <!-- Inline css-->
+                    <!-- <div class="text">Caption Text</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://www.oneplus.in/nord" target="_blank">
+                        <img src="https://www.healthyads.com/wp-content/uploads/2018/12/st-judes-research-hospital-970x250-medical-ads.jpg"
+                            height="350px" width="1200px"></a> <!-- Inline css-->
+                    <!-- <div class="text">Caption Two</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="https://www.nike.com/in/jordan" target="_blank"> <img
+                            src="https://image.shutterstock.com/image-photo/long-banner-medical-utensils-advertising-260nw-1907184505.jpg"
+                            height="350px" width="1200px"></a>
+                    <!-- Inline css-->
+                    <!-- <div class="text">Caption Three</div> -->
+                </div>
+
+                <div class="mySlides fade"><a href="https://www.lg.com/in/appliances" target="_blank">
+                        <img src="https://pharmaceuticals.gov.in/sites/default/files/bannerss2.png" height="350px"
+                            width="1200px"></a> <!-- Inline css-->
+                    <!-- <div class="text">Caption four</div> -->
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+
+
+            </div>
+
+        </section>
+        <!-- <div style="text-align:center" id="DOT"> -->
+        <!-- Inline css-->
+        <!-- <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div> -->
+
+
+        <!-- <div class="container"> -->
+       
+        <div class="heading" id="CovidShield"><a href="#">
+                <br><br><br>
+                <h1>Ayurvedic</h1>
+            </a></div>
+        <hr style="margin-left: 30%;">
+        <section class="Products">
+            <aside class="filter">
+                <div class="FilterList">
+                    <h2 style="padding: 12px 12px; margin-top: 12px; margin-bottom: 12px;">Filter by</h2>
+                    <hr>
+                    <h3 style="    margin-top: 12px;margin-bottom: 0px;padding: 12px;">Expiry Date</h3>
+                    <input type="date" name="Expiry" id="Expiry" style="padding: 5px 12px; margin: 12px 12px; background-color: whitesmoke;
+                    border: none;">
+                    <hr>
+                    <h3 style="    margin-top: 12px; margin-bottom: 0px; padding: 12px;">Manufacture Date</h3>
+                    <input type="date" name="Manufact" id="Manufact" style="padding: 5px 12px; margin: 12px 12px; background-color: whitesmoke;
+                    border: none;">
+                    <hr>
+                    <h3 style="    margin-top: 12px;margin-bottom: 0px;padding: 12px;">Prize</h3>
+                    <div class="Prize-row"><input type="checkbox" name="above100" id="above100"
+                            style="    margin-right: 8px">Above 100 &#x20B9 <br></div>
+                    <div class="Prize-row"><input type="checkbox" name="below300" id="below300"
+                            style="    margin-right: 8px">Below 300 &#x20B9 <br></div>
+                    <div class="Prize-row"><input type="checkbox" name="above300" id="above300"
+                            style="    margin-right: 8px">Above 300 &#x20B9 <br></div>
+                    <div class="Prize-row"><input type="checkbox" name="above500" id="above500"
+                            style="    margin-right: 8px">Below 500 &#x20B9 <br></div>
+                    <hr>
+                    <h3 style="    margin-top: 12px;margin-bottom: 0px;padding: 12px;">Ratings</h3>
+                    <div class="Rating-row"><input type="checkbox" name="3Star" id="3Star"
+                            style="    margin-right: 8px">3 Star:
+                        &#9733 &#9733 &#9733 <br></div>
+                    <div class="Rating-row"><input type="checkbox" name="4Star" id="4Star"
+                            style="    margin-right: 8px">4 Star:
+                        &#9733 &#9733 &#9733 &#9733 <br></div>
+                    <div class="Rating-row"><input type="checkbox" name="5Star" id="5Star"
+                            style="    margin-right: 8px">5 Star:
+                        &#9733 &#9733 &#9733 &#9733 &#9733 <br></div>
+                    <hr>
+                    <h3 style="    margin-top: 12px; margin-bottom: 0px; padding: 12px;">Section</h3>
+                    <div class="Section-row"><a href="#" style="color: black;">Covid Shield</a></div>
+                    <div class="Section-row"><a href="#" style="color: black;">Anticeptic</a></div>
+                    <div class="Section-row"><a href="#" style="color: black;">Diabeties</a></div>
+                </div>
+            </aside>
+             
+            <a id=" Ayurvedic">
+            <ul
+                style="    list-style-type: none; display: flex; flex-direction: row; flex-wrap: wrap; text-decoration: none; color: black;     margin-left: 9%;">
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="images/triphala-churna.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="triphalachuran.html">Triphala Churan</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="triphalachuran.html"> <button class="ViewMore">View More</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="product card/Chawanprash.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="chawanprash.html">Chawanprash</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="chawanprash.html"><button class="ViewMore">View More</button></a>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="images/zandu-nityam-ayurvedic-vati-500x500.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="zand nityam.html">Zandu Nityam</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="zand nityam.html"><button class="ViewMore">View More</button></a>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </a>
+        </section>
+        <div class="heading" id="CovidShield"><a href="#">
+                <a id="essentials"><h1>Covid-19 Essentials</h1></a>
+            </a></div>
+        <hr style="margin-left: 30%;">
+        <section class="Product1">
+             
+            <ul style="list-style-type: none; display: flex; flex-direction: column; flex-wrap: wrap ; ">
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="product card/big img.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="tp.html">Dettol</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="tp.html" target="_blank"><button class="ViewMore">View
+                                    More</button></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="product card/savlon spray.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="savlon.html">Savlon</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="savlon.html" target="_blank"><button class="ViewMore">View
+                                    More</button></a>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="images/mask.png"
+                                alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="#">FACE-MASK</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <button class="ViewMore">View More</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <a id="mom&care">
+        <div class="heading" id="CovidShield"><a href="#">
+                <h1>Mom & Baby care</h1>
+            </a></div>
+        <hr style="margin-left: 30%;">
+        <section class="Product2">
+            <ul style="    list-style-type: none; display: flex; flex-direction: column; flex-wrap: wrap;">
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="product card/protinex.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="protinexmom.html">Protinex</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="protinexmom.html" target="_blank"><button class="ViewMore">View
+                                    More</button></a>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="product card/hb2.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="himalayababypowder.html">Himalaya Baby</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="himalayababypowder.html" target="_blank"><button class="ViewMore">View
+                                    More</button></a>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="item-product-discription">
+                        <div class="item-image">
+                            <img src="product card/cerelac.jpg" alt="Item1Img" class="Pro">
+                        </div>
+                        <div class="content">
+                            <h2><a href="cerelac.html">Cerelac</a></h2>
+                            <ul style="list-style-type:none;">
+                                <li><a href="#">Protect</a></li>
+                                <li><a href="#">Surgerymask</a></li>
+                                <li><a href="#">gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="Product-Price">
+                            <b style="    margin-left: 110px; font-size: 22px;">199 &#x20B9 </b><br>
+                            <a href="cerelac.html" target="_blank"><button class="ViewMore">View
+                                    More</button></a>
+                        </div>
+
+                    </div>
+                </a>
+                </li>
+            </ul>
+        </section>
+        <!-- </div> -->
+        <section class="footer">
+            <div class="foot">
+                <div class="foot-content">
+                    <div class="foot-shop">
+                        <h3>Home</h3><br><br>
+                        <ul>
+                            <li><a href="shop.html#essentials">Covid-19 Essentials</a></li><br>
+                            <li><a href="shop.html#mom&care">Mom & Baby Health care</a></li><br>
+                            <li><a href="shop.html#Ayurvedic">Ayurvedic</a></li><br>
+                            <li><a href="hcp.html#Emergency">Emergency Kit</a></li><br>
+                        </ul>
+                    </div>
+                    <div class="foot-company">
+                        <h3>Company</h3><br><br>
+                        <ul>
+                            <li><a href="#">Careers</a></li><br>
+                            <li><a href="#">Blog</a></li><br>
+                            <li><a href="#">Partner with medico</a></li><br>
+                            <li><a href="#">Sell at medico</a></li><br>
+                        </ul>
+                    </div>
+                    <div class="foot-help">
+                        <h3>Need Help?</h3><br><br>
+                        <ul>
+                            <li><a href="FAQs.html">FAQs</a></li><br>
+                            <li><a href="mailto: khushiy0842@gmail.com">Contact us</a></li><br>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <h3>Follow us</h3>
+                        <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="foot-bottom">
+                    &copy; medico.com | Made with <i class="lni lni-heart"></i> by TCETDEV
+                </div>
+            </div>
+        </section>
+        <script>
+
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 5 seconds
+            }
+
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+
+            }
+        </script>
+</body>
+
+</html>
