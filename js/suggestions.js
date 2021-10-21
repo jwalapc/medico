@@ -1,0 +1,15 @@
+let suggestions = [
+    "Triphala Churna",
+    "Dabur Chyawanprash",
+    "Himalaya Baby Powder",
+    "Cerelac baby powder",
+    "Zand nityam tablet",
+    "Dettol Antiseptic Liquid",
+    "Savlon Antiseptic Spray",
+    "Protinex Mama Powder",
+    "Dove Shampoo & conditioner",
+    "Conditioner",
+    "Lotion",
+    "Band-Aid",
+    "Thermometer",
+];
