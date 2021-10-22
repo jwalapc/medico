@@ -116,6 +116,7 @@ display: block;
 .wrapper{
   max-width: 400px;
   margin: 320px auto;
+  box-shadow: 15px 1px 20px 8px rgba(122, 216, 153, 0.452);
 }
 
 .wrapper .search-input{
@@ -123,7 +124,7 @@ display: block;
   width: 100%;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  
 }
 
 .search-input input{
@@ -132,7 +133,7 @@ display: block;
   outline: none;
   border: none;
   border-radius: 10px;
-  padding: 0 60px 0 20px;
+  padding: 0 40px 0 10px;
   font-size: 18px;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
@@ -173,13 +174,13 @@ display: block;
 
 .search-input .icon{
   position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 55px;
-  width: 55px;
+  left: 359px;
+  top: 0;
+  height: 80px;
+  width: 80px;
   text-align: center;
   line-height: 55px;
-  font-size: 20px;
+  font-size: 30px;
   color: #53c68c;
   cursor: pointer;
 }
