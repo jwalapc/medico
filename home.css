@@ -48,6 +48,19 @@ nav .fas{
    color: darkblue;
 }
 
+.fa-instagram:hover {
+   color: red;
+}
+.fa-facebook-square:hover {
+   color: red;
+}
+.fa-twitter-square:hover {
+   color: red;
+}
+.fa-linkedin:hover {
+   color: red;
+}
+
 
 .gbtn{
 font-size: 16px;
