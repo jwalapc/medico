@@ -41,6 +41,13 @@ nav img{
 nav .fas{
    display: none;
 }
+.nav-links ul li a:hover{
+   color: darkblue;
+}
+.nav-links ul li button:hover{
+   color: darkblue;
+}
+
 
 .gbtn{
 font-size: 16px;
