@@ -537,7 +537,13 @@ display:list-item;
 }
 .foot-shop ul li a{
 text-decoration: none;
-color: black;
+color: #35038c ;
+}
+.foot-shop ul li a:hover{
+   color:red;
+   text-transform:uppercase;
+   text-shadow: #210541;
+   
 }
 .foot-company{
 flex-basis: 15%;
@@ -547,8 +553,15 @@ list-style: none;
 display:list-item;
 }
 .foot-company ul li a{
-   color: #3e4444;
+   color: #b45d0b;
 text-decoration: none;
+}
+.foot-company ul li a:hover{
+   
+   color:darkblue;
+   text-transform:uppercase;
+   text-shadow: #210541;
+   
 }
 .foot-help{
 flex-basis: 15%;
@@ -558,8 +571,14 @@ list-style: none;
 display:list-item;
 }
 .foot-help ul li a{
-   color: #3e4444;
+   color: red;
 text-decoration: none;
+}
+.foot-help ul li a:hover{
+   color:indigo;
+   text-transform:uppercase;
+   text-shadow: #210541;
+   
 }
 .foot-icons{
 flex-basis: 15%;
@@ -582,6 +601,7 @@ bottom: 0px;
 left: 0px;
 width: 100%;
 }
+
 @media(max-width:500px){
    .foot{
       height: 690px;
