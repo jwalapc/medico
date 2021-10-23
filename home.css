@@ -355,7 +355,9 @@ display: block;
    padding-top: 50px;
  }
  .product h2{
- font-size: 38px;
+ font-size: 48px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-weight: bolder;
  }
  .prdct-col {
    text-align: left;
