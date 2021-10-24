@@ -36,7 +36,7 @@ body{
 }
 .img{
     box-sizing: border-box;
-    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.6);
 }
 .img:hover{
     box-shadow: none;
@@ -50,5 +50,5 @@ button{
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
-    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.6);
 }
