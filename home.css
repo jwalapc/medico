@@ -42,23 +42,23 @@ nav .fas{
    display: none;
 }
 .nav-links ul li a:hover{
-   color: darkblue;
+   color: rgb(255, 27, 27);
 }
 .nav-links ul li button:hover{
-   color: darkblue;
+   color: rgb(255, 27, 27);
 }
 
 .fa-instagram:hover {
-   color: darkblue;
+   color: rgb(240, 0, 132);
 }
 .fa-facebook-square:hover {
-   color: darkblue;
+   color: rgb(37, 48, 212);
 }
 .fa-twitter-square:hover {
-   color: darkblue;
+   color: rgb(51, 224, 255);
 }
 .fa-linkedin:hover {
-   color: darkblue;
+   color: rgb(13, 33, 150);
 }
 
 
