@@ -14,7 +14,7 @@
 nav{
    display: flex;
    justify-content: space-between;
-  background-color: #53c68c;
+  background-color: ;
   max-height: 70px;
 }
 nav img{
@@ -36,7 +36,7 @@ nav img{
 .nav-links ul li a{
    color: white;
    text-decoration: none;
-   font-size: 16 px;
+   font-size: 14 px;
 }
 
 nav .fas{
@@ -46,7 +46,7 @@ nav .fas{
 .gbtn{
   background-color: transparent;
   border: none;
-  color: #fff;
+  color:lightsteelblue;
   cursor: pointer;
   }
 
@@ -54,7 +54,7 @@ nav .fas{
 .nav-search{
   width: 200px;
    border-radius: 15px;
-   border: 1px #000 solid;
+   border: 1px black solid;
    padding: 5px 5px 5px 25px;
    top: 0;
    left: 0;
