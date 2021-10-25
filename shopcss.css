@@ -10,7 +10,7 @@
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #53c68c;
+  background-color:lightseagreen;
   max-height: 70px;
 }
 
@@ -507,7 +507,7 @@ button:active {
     display: inline-block;
     margin-left: 60px;
     margin-top: 15px;
-    font-size: 12px;
+    font-size: 10px;
     overflow-x: hidden;
   }
   .ViewMore {
