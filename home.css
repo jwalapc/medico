@@ -34,7 +34,7 @@ nav img{
    position: relative;
 }
 .nav-links ul li a{
-   color: white;
+   color: blue;
    text-decoration: none;
    font-size: 13 px;
 }
@@ -49,16 +49,18 @@ nav .fas{
 }
 
 .fa-instagram:hover {
-   color: rgb(139, 0, 0);
+
+   color: red;
+
 }
 .fa-facebook-square:hover {
-   color: darkblue;
+   color: red;
 }
 .fa-twitter-square:hover {
-   color: darkblue;
+   color: red;
 }
 .fa-linkedin:hover {
-   color: darkblue;
+   color: red;
 }
 
 
@@ -66,7 +68,7 @@ nav .fas{
 font-size: 17px;
 background-color: transparent;
 border: none;
-color: #fff;
+color: blue;
 cursor: pointer;
 }
 
@@ -560,12 +562,13 @@ list-style: none;
 display:list-item;
 }
 .foot-company ul li a{
-   color: #b45d0b;
+   color: #35038c;
 text-decoration: none;
 }
 .foot-company ul li a:hover{
    
-   color:darkblue;
+   color:red;
+   transform: scale(1.2);
    text-transform:uppercase;
    text-shadow: #210541;
    
@@ -578,11 +581,11 @@ list-style: none;
 display:list-item;
 }
 .foot-help ul li a{
-   color: red;
+   color: #35038c;
 text-decoration: none;
 }
 .foot-help ul li a:hover{
-   color:indigo;
+   color:red;
    text-transform:uppercase;
    text-shadow: #210541;
    
