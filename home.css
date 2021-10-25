@@ -13,7 +13,7 @@
    position: relative;
 }
 nav{
-   display: flex;
+   display: inline;
    justify-content: space-between;
   
   max-height: 60px;
@@ -42,14 +42,14 @@ nav .fas{
    display: none;
 }
 .nav-links ul li a:hover{
-   color: darkblue;
+   color: rgb(139, 0, 0);
 }
 .nav-links ul li button:hover{
-   color: darkblue;
+   color: rgb(139, 0, 0);
 }
 
 .fa-instagram:hover {
-   color: darkblue;
+   color: rgb(139, 0, 0);
 }
 .fa-facebook-square:hover {
    color: darkblue;
@@ -338,7 +338,7 @@ display: block;
  .btn::after{
    content: '';
    width: 0%;
-   height: 2px;
+   height: 10px;
    background:#fff;
    display: block;
    margin: auto;
