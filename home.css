@@ -247,6 +247,14 @@ display: block;
    cursor: pointer;
    border-radius: 5px;
  }
+
+ .buymedbtn:hover{
+   background-color: white;
+   color:#4DD890 ;
+   border:5px solid #4DD890;
+   font-weight: bold;
+
+ }
  .order-col .buyhcbtn{
    position: absolute;
    text-decoration: none;
@@ -261,6 +269,14 @@ display: block;
    border: none;
    cursor: pointer;
    border-radius: 5px;
+ }
+
+ .buyhcbtn:hover{
+   background-color: white;
+   color:#FF9381 ;
+   border:5px solid #FF9381;
+   font-weight: bold;
+
  }
  .order-col .buyltbtn{
    position: absolute;
@@ -277,6 +293,14 @@ display: block;
    cursor: pointer;
    border-radius: 5px;
  }
+ .buyltbtn:hover{
+   background-color: white;
+   color:#2DC2C2 ;
+   border:5px solid #2DC2C2;
+   font-weight: bold;
+
+ }
+
  
 .row{
    margin-top: 5%;
