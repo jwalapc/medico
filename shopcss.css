@@ -32,6 +32,13 @@ nav img {
   padding-right: 7%;
   position: relative;
 }
+.nav-links ul li a:hover{
+  color : blue;
+}
+.gbtn:hover{
+  color: blue;
+  font-size: 14px;
+}
 
 .nav-links ul li a {
   color: white;
