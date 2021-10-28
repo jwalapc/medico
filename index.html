@@ -2,7 +2,7 @@
 <html>
 
 <head>
-   <link rel="shortcut icon" href="images/Logo.png" sizes="16x16"  type="image/x-icon">
+   <link rel="shortcut icon" href="images/Logo.png" sizes="16x16" type="image/x-icon">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +17,12 @@
    <script src="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.js"></script>
    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.4.0/firebase-ui-auth.css" />
 </head>
+<style>
+   span{
+      color: red;
+      font-weight: bold;
+   }
+</style>
 
 <body>
    <section class="header">
@@ -25,10 +31,11 @@
          <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
-               <li><a href="ocr.html"><i class="uil uil-capture"></i>Upload</a></button></li>
-               <li><a href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
-               <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/ Sign-up</button></li>
-               <li><a href="cart.html"><i class="uil uil-shopping-cart"></i>Cart</a></li>
+               <li><a style="border-radius: 20px; padding: 10px; background-color: rgb(236, 241, 245);" href="ocr.html"><i class="uil uil-capture"></i>Upload</a></button></li>
+               <li><a style="border-radius: 20px; padding: 10px; background-color: rgb(236, 241, 245); href="offers.html"><i class="lni lni-offer"></i>Offers</a></li>
+               <li><button style="border-radius: 20px; padding: 10px; background-color: rgb(236, 241, 245); class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i>Login/
+                     Sign-up</button></li>
+               <li><a style="border-radius: 20px; padding: 10px; background-color: rgb(236, 241, 245); href="cart.html"><i class="uil uil-shopping-cart"></i>Cart</a></li>
             </ul>
          </div>
          <script type="text/javascript">
@@ -52,7 +59,7 @@
                messagingSenderId: "323333761920",
                appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
                measurementId: "G-0KHX2EJ3BR"
-               };
+            };
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
          </script>
@@ -64,18 +71,18 @@
       </nav>
       <div class="wrapper">
          <div class="search-input">
-           <a href="" target="_blank" hidden></a>
-           <input type="text" placeholder="Type to search......">
-           <div class="autocom-box">
-             <!-- here list are inserted from javascript -->
-           </div>
-           <div class="icon"><i class="fas fa-search"></i></div>
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Type to search......">
+            <div class="autocom-box">
+               <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
          </div>
-       </div>
-   
-       <script src="js/suggestions.js"></script>
-       <script src="js/script.js"></script>
-   
+      </div>
+
+      <script src="js/suggestions.js"></script>
+      <script src="js/script.js"></script>
+
    </section>
    <!--Javascript for toggle menu-->
    <script>
@@ -125,27 +132,36 @@
    </section>
    <!--Products-->
    <section class="product">
-      <h2>Products</h2>
+         <h2 class="product_logo"><i class="fas fa-cart-arrow-down"></i>Products</h2>
       <div class="row">
          <div class="prdct-col">
+            <span title="Essential Items">
             <a href="shop.html#essentials">
                <img src="images/p1.png" alt="">
+               
             </a>
+         </span>
          </div>
          <div class="prdct-col">
+            <span title="Babycare Products">
             <a href="shop.html#mom&care">
                <img src="images/babycare.jpg" alt="">
             </a>
+         </span>
          </div>
          <div class="prdct-col">
+            <span title="Ayurvedic">
             <a href="shop.html#Ayurvedic">
                <img src="images/ayur.png" alt="">
             </a>
+         </span>
          </div>
          <div class="prdct-col">
+            <span title="Emergency Kit">
             <a href="hcp.html#Emergency">
                <img src="images/EmergencyKit.jpg" alt="">
             </a>
+         </span>
          </div>
       </div>
    </section>
@@ -166,6 +182,16 @@
          data-name="9df4e4d1da956df04f98a628ffe58f93|5|page|1|#ea5050|#ffffff|small|s-hit">Hit Counter</a>
       <script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() + "'><\/script>");</script>
       <!-- Badge Code End Here -->
+   </section>
+   <section style="background: rgba(125, 228, 125, 0.733);">
+      <center>
+         <p><big>Full Body Check-Up Drive - We care for your health..!!</big></p>
+         <br>
+         By Doctor: To be updated soon.<br>
+         Date: To be updated soon.<br>
+         Venue: To be updated soon.<br> <br>
+         <a href="bodycheckup.html" <button"> Register Now </button></a>
+      </center>
    </section>
    <!--Customers-->
    <section class="customers">
@@ -191,7 +217,7 @@
                   <li><a href="shop.html#essentials">Covid-19 Essentials</a></li><br>
                   <li><a href="shop.html#mom&care">Mom & Baby Health care</a></li><br>
                   <li><a href="shop.html#Ayurvedic">Ayurvedic</a></li><br>
-                  <li><a href="hcp.html#Emergency">Emergency Kit</a></li><br>
+                  <li><a href="hcp.html#Emergency">Emergency Kits</a></li><br>
                </ul>
             </div>
             <div class="foot-company">
@@ -207,19 +233,31 @@
                <h3>Need Help?</h3><br><br>
                <ul>
                   <li><a href="FAQs.html">FAQs</a></li><br>
-                  <li><a href="mailto: khushiy0842@gmail.com">Contact us</a></li><br>
+                  <li><a href="contact.html">Contact us</a></li><br>
+                  <li><a href="about.html">About us</a></li><br>
                </ul>
             </div>
             <div class="icons">
                <h3>Follow us</h3>
-               <a href="https://www.instagram.com/medicopharma360/"><i class="fab fa-instagram fa-2x"></i></a>
-               <a href="https://www.facebook.com/profile.php?id=100073159119796"><i class="fab fa-facebook-square fa-2x"></i></a>
-               <a href="https://twitter.com/MedicoPharma"><i class="fab fa-twitter-square fa-2x"></i></a>
-               <a href="http://linkedin.com/in/medico-pharma-58843b221"><i class="fab fa-linkedin fa-2x"></i></a>
+               <a href="https://www.instagram.com/medicopharma360/"target="blanck"><i class="fab fa-instagram fa-2x"></i></a>
+               <a href="https://www.facebook.com/profile.php?id=100073159119796"target="blanck"><i
+                     class="fab fa-facebook-square fa-2x"></i></a>
+               <a href="https://twitter.com/MedicoPharma"target="blanck"><i class="fab fa-twitter-square fa-2x"></i></a>
+               <a href="http://linkedin.com/in/medico-pharma-58843b221"target="blanck"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+               <h3>Share!</h3>
+               <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+               <a class="a2a_button_facebook"></a>
+               <a class="a2a_button_twitter"></a>
+               <a class="a2a_button_email"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+   <!-- AddToAny END -->
          </div>
          <div class="foot-bottom">
-            &copy; medico.com | Made with <i class="lni lni-heart"></i> by TCETDEV | Hare Krishna
+            &copy; medico.com | Made with <i class="lni lni-heart"></i> by TCETDEV | <span>Hare Krishna</span>
          </div>
       </div>
    </section>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Check-Up</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        input[type="text"]{
+          margin-bottom: 20px;
+          padding: 4px;
+          width: 330px;
+          height: 32px;
+         }
+        input[type="password"]{
+          margin-bottom: 20px;
+          padding: 4px;
+          width: 500px;
+          height: 32px;
+         }
+         input[type="reset"]{
+         width: 100px;
+         height: 32px;
+         font-weight: bold;
+         }
+        </style>
+</head>
+<body>
+    <section class="header">
+        <a href="#"><img src="images/Logo.png" alt="" style="height: 100px; width: fit-content;"></a>
+        <section style="border: 2px; box-sizing: content-box; border-color: aqua; border-radius: 6px; box-shadow: 2px 2px 3px; ">
+            <H1 style="font-size: 40px;"><B><CENTER>REGISTRATION FORM</CENTER></B></H1>
+            <BR><BR>
+            <form name="fname"  enctype="text/plain">
+                <H3><U>PERSONAL DETAILS:</U></H3>
+                <BR>
+                <div style="width: 100%;">
+
+                    <div style="width: 100%;">
+                        <div style="width: 50%; height: 100px; float: left;">
+                            FIRST NAME &nbsp;&nbsp;<input type="text" name="fname" id="name" >
+                            <BR>
+                            GENDER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT TYPE="RADIO" NAME="GENDER">MALE
+                            <BR>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <INPUT TYPE="RADIO" NAME="GENDER">FEMALE
+                        </div>
+                        <div style="margin-left: 50%; height: 100px;">
+                            LAST NAME &nbsp;&nbsp;<INPUT TYPE="TEXT" NAME="LNAME" MAXLENGTH="100">
+                            <BR>
+                            <label for="DOB">DATE OF BIRTH &nbsp;&nbsp;</label>
+                            <input type="date" id="DOB" name="DOB">
+                        </div>
+                        <br>
+                        ADDRESS &nbsp;&nbsp; <input type="text" name="address" id="address" style="height: 64px; width: 990px;">
+                    </div>
+                <BR>
+                <H3><U>CONTACT DETAILS:</U></H3>
+                <BR>
+                    <div style="width: 100%;">
+                        <div style="width: 50%; height: 80px; float: left;">
+                            EMAIL ID &nbsp;&nbsp;<input type="text" name="email" id="email">
+                        </div>
+                        <div style="margin-left: 50%; height: 80px;">
+                        MOBILE NO. &nbsp;&nbsp; <INPUT TYPE="TEXT" MAXLENGTH="3" STYLE=" width: 70px;" VALUE="+91" disabled>
+                        &nbsp; <input type="text" name="mobile" id="mobile" maxlength="10">
+                        </div>
+                    </div> 
+                    <BR><BR><BR><BR>
+                    <INPUT TYPE="CHECKBOX" NAME="TERMS">&nbsp;&nbsp;I ACCEPT THE TERMS AND CONDITIONS SPECIFIED BY THE ORGANIZATION<BR>
+                    <BR><BR><BR>
+                    <div style="width: 100%;">
+                        <div style="margin-left: 45%; float: left;">
+                        <input type="submit" value="SUBMIT" STYLE="width: 100px; height: 32px; font-weight: bold;">
+                        </div>
+                        <div style="margin-left: 55%;">
+                        <input type="reset" value="RESET" >
+                        </div>
+                    </div>
+                </div>
+            </FORM>
+     </section>
+</body>
+</html>
