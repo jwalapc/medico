@@ -19,7 +19,7 @@
 </head>
 <style>
    span{
-      color: red;
+      color: #05386B;
       font-weight: bold;
    }
    #navLinks{
@@ -29,7 +29,7 @@
       z-index: 1000;
       justify-content: space-between;
       height: 6rem;
-      background-color: rgb(255, 65, 65);
+      background-color: #05386B;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.993);
       text-align: center;
       display:inline-block;
@@ -40,6 +40,7 @@
 <body>
    <section class="header">
       <a href="#"><img width="130" height="130" src="images/Logo.png" alt=""></a>
+      <br>
       <nav>
          <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
@@ -82,6 +83,7 @@
          <script src="./scripts/script.js"></script>
          <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
+
       <div class="wrapper">
          <div class="search-input">
             <a href="" target="_blank" hidden></a>
@@ -95,7 +97,14 @@
 
       <script src="js/suggestions.js"></script>
       <script src="js/script.js"></script>
-
+      <div id="intro-discription">
+         <p id="intro-discription">
+            <span class="text-slider-items">
+               <p>Making you better,</p>
+            </span>
+            <strong class="text-slider"></strong>
+        </p>
+      </div>
    </section>
    <!--Javascript for toggle menu-->
    <script>
@@ -300,6 +309,11 @@
       })();
    </script>
    <!--End of Tawk.to Script-->
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="typed.js-master/lib/typed.min.js"></script>
+   <script src="app.js"></script>
 </body>
 
 </html>
