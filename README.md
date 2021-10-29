@@ -2,9 +2,9 @@
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-
-
-
+# About medico repo
+This is the repository which contain the various HTML and CSS codes of <br> medically used products like Savlon, Himalya baby powder, Thermometer, etc. <br>
+Basically this repository have codes of the products which help us in healing our body in any circumstances. 
 
 # First Contributions
 
