@@ -42,25 +42,25 @@ nav .fas{
    display: none;
 }
 .nav-links ul li a:hover{
-   color: rgb(139, 0, 0);
+   color: rgb(28, 151, 44);
 }
 .nav-links ul li button:hover{
-   color: rgb(139, 0, 0);
+   color: rgb(28, 151, 44);
 }
 
 .fa-instagram:hover {
 
-   color: red;
+   color: rgb(28, 151, 44);
 
 }
 .fa-facebook-square:hover {
-   color: red;
+   color:  rgb(28, 151, 44);
 }
 .fa-twitter-square:hover {
-   color: red;
+   color:  rgb(28, 151, 44);
 }
 .fa-linkedin:hover {
-   color: red;
+   color:  rgb(28, 151, 44);
 }
 
 
@@ -575,7 +575,7 @@ text-decoration: none;
 color: #35038c ;
 }
 .foot-shop ul li a:hover{
-   color:red;
+   color:rgb(28, 151, 44);
    text-transform:uppercase;
    text-shadow: #210541;
    
@@ -593,7 +593,7 @@ text-decoration: none;
 }
 .foot-company ul li a:hover{
    
-   color:red;
+   color:rgb(208, 255, 0);
    transform: scale(1.2);
    text-transform:uppercase;
    text-shadow: #210541;
@@ -611,7 +611,7 @@ display:list-item;
 text-decoration: none;
 }
 .foot-help ul li a:hover{
-   color:red;
+   color:rgb(28, 151, 44);
    text-transform:uppercase;
    text-shadow: #210541;
    
