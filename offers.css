@@ -14,7 +14,7 @@
 nav{
    display: flex;
    justify-content: space-between;
-  background-color: blanchedalmond;
+  background-color:#53c68c;
   max-height: 70px;
 }
 nav img{
@@ -46,7 +46,7 @@ nav .fas{
 .gbtn{
   background-color: transparent;
   border: none;
-  color:lightsteelblue;
+  color:white;
   cursor: pointer;
   }
 
