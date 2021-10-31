@@ -394,13 +394,13 @@ display: block;
  /*Product*/
  .product{
    text-align: center;
-   width: 80%;
+   width: 70%;
    margin: auto;
    padding-top: 50px;
  }
 /* product logo styling */
 .product .product_logo{
-   font-size: 48px;
+   font-size: 50px;
    font-weight: bolder;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    /* background: skyblue; */
@@ -464,7 +464,7 @@ display: block;
 .cards-col2 .btn2{
    position: absolute;
    top: 62%;
-   right: 9%;
+   right: 10%;
    transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
    text-decoration: none;
@@ -508,7 +508,7 @@ display: block;
  .btn3::after{
    content: '';
    width: 0%;
-   height: 2px;
+   height: 5px;
    background:#fff;
    display: block;
    margin: auto;
@@ -612,6 +612,7 @@ text-decoration: none;
 .foot-company ul li a:hover{
    
    color:rgb(208, 255, 0);
+   font-weight: bold;
    transform: scale(1.2);
    text-transform:uppercase;
    text-shadow: #210541;
@@ -630,6 +631,7 @@ text-decoration: none;
 }
 .foot-help ul li a:hover{
    color:rgb(28, 151, 44);
+   font-weight: bold;
    text-transform:uppercase;
    text-shadow: #210541;
    
