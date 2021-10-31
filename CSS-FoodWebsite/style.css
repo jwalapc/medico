@@ -112,7 +112,7 @@ h1 .style {
 .icons:hover {
   transform: scale(1.1);
   color: #fff;
-  background-color: #9c5f09;
+  background-color: #eda134;
   transition: all 0.5s;
 }
 .image {
@@ -120,7 +120,7 @@ h1 .style {
   width: auto;
   bottom: 0;
   height: 60%;
-  margin-left: 830px;
-  margin-bottom: 150px;
+  margin-left: 810px;
+  margin-bottom: 120px;
 }
 
