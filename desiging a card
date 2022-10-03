@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/da5275addd.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="images/illustration-hero.svg" alt="">
+        </div>
+        <div class="content">
+            <h1 class="title">Order Summary</h1>
+            <p class="text">You can now listen to millions of songs,<br> audiobooks, and podcasts on any device<br> anywhere you like!</p>
+            <div class="pricing">
+                <i class="fas fa-music fa-lg"></i>
+                <div class="cost">
+                    <h4 class="offer">Annual Plan</h4>
+                    <p class="price">$59.99/year</p>
+                </div>
+                <a href="#" class="modify">Change</a>
+            </div>
+            <button class="payment">Proceed to Payment</button>
+            <a href="#" class="cancel">Cancel Order</a>
+        </div>
+    </div>
+</body>
+
+</html>
