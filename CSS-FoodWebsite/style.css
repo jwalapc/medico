@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Palette+Mosaic&display=swap");
 
-#my{
-    zoom: 110%;
-    }
+#my {
+  zoom: 110%;
+}
 
 * {
   margin: 0;
@@ -123,4 +123,8 @@ h1 .style {
   margin-left: 810px;
   margin-bottom: 120px;
 }
-
+.a2a_dd:link,
+.a2a_dd:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
