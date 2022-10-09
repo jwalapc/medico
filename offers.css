@@ -74,8 +74,8 @@ nav .fas{
   .nav-links{
        position: absolute;
        background: #53c68c;
-       height: 100vh;
-       width: 200px;
+       height: 130vh;
+       width: 230px;
        top: 0;
        right: -250px;
        text-align: left;
@@ -87,7 +87,7 @@ nav .fas{
       color: #fff;
       margin-top: 10%;
       margin-right: 8%;
-      padding-right: 16px;
+      padding-right: 15px;
       font-size: 15px;
       cursor: pointer; 
     }
@@ -131,7 +131,7 @@ nav .fas{
    }
  }
 .wrapper{
-   min-height: 100vh;
+   min-height: 150vh;
    justify-content: center;
    display: flex;
    align-items: center;
@@ -155,7 +155,7 @@ nav .fas{
  }
  .coupons-col{
   flex: 60%;
-  padding: 5px;
+  padding: 10px;
   margin-left: 10%;
   margin-right: 10%;
   position: relative;
