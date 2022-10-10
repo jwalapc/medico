@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		h1 {
+			color: green;
+		}
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			text-align: center;
+		}
+	
+		/* Float three columns */
+		.column {
+			float: left;
+			width: 33%;
+			padding: 0 5px;
+		}
+		
+		.row {
+			margin: 0 -5px;
+		}
+	
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+		}
+	
+	
+		/* Style the cards */
+		.card {
+			padding: 10px;
+			text-align: center;
+			background-color: gray;
+			color: white;
+		}
+		
+		.card:hover {
+			transform: scale(1.1);
+			background-color: black;
+			transition-duration: 2s;
+			color: white;
+		}
+		
+		.fa {
+			font-size: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>GeeksforGeeks</h1>
+	<strong>Section Counter</strong>
+	<br><br>
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				
+
+<p><i class="fa fa-user"></i></p>
+
+
+				<h3>759+</h3>
+				
+
+<p>Contributor</p>
+
+
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				
+
+<p><i class="fa fa-book"></i></p>
+
+
+				<h3>60k+</h3>
+				
+
+<p>Article</p>
+
+
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				
+
+<p><i class="fa fa-smile-o"></i></p>
+
+
+				<h3>70+</h3>
+				
+
+<p>Employees</p>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+<style>
+	h1 {
+		color: green;
+	}
+		
+	* {
+		box-sizing: border-box;
+	}
+		
+	body {
+		text-align: center;
+	}
+	
+	/* Float columns */
+	.column {
+		float: left;
+		width: 33%;
+		padding: 0 5px;
+	}
+		
+	.row {
+		margin: 0 -5px;
+	}
+	
+	.row:after {
+		content: "";
+		display: table;
+	}
+	
+	/* Style the cards */
+	.card {
+		padding: 10px;
+		text-align: center;
+		background-color: gray;
+		color: white;
+		}
+		
+	.card:hover {
+		transform: scale(1.1);
+		background-color: black;
+		transition-duration: 2s;
+		color: white;
+	}
+		
+	.fa {
+		font-size: 50px;
+	}
+	</style>
