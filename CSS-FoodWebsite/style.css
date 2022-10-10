@@ -30,14 +30,14 @@
 .logo {
   font-size: 50px;
   color: #eda134;
-  margin-top: 5px;
+  margin-top: 7px;
   font-family: "Palette Mosaic", cursive;
   text-transform: uppercase;
   cursor: pointer;
 }
 nav {
   flex: 1;
-  padding-left: 660px;
+  padding-left: 700px;
 }
 nav ul li {
   display: inline-block;
@@ -46,9 +46,9 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffg;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
 }
 .content {
@@ -59,7 +59,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 800;
   margin-top: 100px;
-  letter-spacing: 0.1em;
+  letter-spacing: 1em;
   font-size: 70px;
   color: #1b1b1b;
 }
@@ -76,7 +76,7 @@ h1 .style {
 }
 .btn {
   background-color: #eda134;
-  margin-top: 80px;
+  margin-top: 85px;
   padding: 15px 45px;
   border: none;
   outline: none;
@@ -99,10 +99,10 @@ h1 .style {
   font-size: 27px;
 }
 .icons {
-  color: #eda134;
+  color: #eda138;
   padding: 12px 12px 10px 12px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffd;
   margin-left: 10px;
   height: 27px;
   width: 27px;
@@ -110,10 +110,10 @@ h1 .style {
   box-shadow: 3px 8px 22px rgba(22, 21, 21, 0.15);
 }
 .icons:hover {
-  transform: scale(1.1);
+  transform: scale(1.6);
   color: #fff;
   background-color: #eda134;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .image {
   position: absolute;
