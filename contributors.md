@@ -6,3 +6,4 @@
 - [Himanshu Mendapara](https://github.com/himanshu634)
 - [Abhishek Singh](https://github.com/Abhivic000)
 - [Aditya Dwivedi](https://github.com/lonewolf0502)
+- [Vishal Joshi](https://github.com/knockcat)
