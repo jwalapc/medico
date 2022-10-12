@@ -7,3 +7,4 @@
 - [Abhishek Singh](https://github.com/Abhivic000)
 - [Aditya Dwivedi](https://github.com/lonewolf0502)
 - [Vishal Joshi](https://github.com/knockcat)
+- [Arpit Katiyar](https://github.com/arpit5220)
