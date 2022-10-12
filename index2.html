@@ -5,7 +5,7 @@
 <head>
 <title>Employee Interests Survey</title>
 </head>
-<body>
+<body style="Color:White;background:black;">
 <!-- as it is a survey form, we will need to submit the details, hence we use form -->
 <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
 <form action="http://google.co.in">
@@ -15,15 +15,15 @@
 <h1>Employee Interests Survey form</h1>
 Enter your name:
 <!-- Input type text for small texts, specify size -->
-<input type="text" name="UserName" size=35 maxlength=35 value="">
+<input type="text" name="UserName" size=35 maxlength=35 value="" placeholder="Enter your name">
 <!--Adds spaces - remove and see what happens -->
 </br></br>
 Enter your department:
-<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+<input type="text" name="Deptt" size=35 maxlength=35 value="" placeholder="Enter your department"> </br> </br>
 Tell us a little about yourself:
 <!-- For writing lot of text like descriptions with text wrapping,
 if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
-<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+<textarea name="Comments" cols=30 rows=4 placeholder="Tell us a little about yourself"></textarea> </br> </br>
 Do you exercise at home?
 <!-- Radio buttons help you choose one out of the many values -->
 <input type="radio" name="exe" value=1>Yes
