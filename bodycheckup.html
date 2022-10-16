@@ -1,85 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Body Check-Up</title>
-    <link rel="stylesheet" href="home.css">
-    <style>
-        input[type="text"]{
-          margin-bottom: 20px;
-          padding: 4px;
-          width: 330px;
-          height: 32px;
-         }
-        input[type="password"]{
-          margin-bottom: 20px;
-          padding: 4px;
-          width: 500px;
-          height: 32px;
-         }
-         input[type="reset"]{
-         width: 100px;
-         height: 32px;
-         font-weight: bold;
-         }
-        </style>
-</head>
-<body>
-    <section class="header">
-        <a href="#"><img src="images/Logo.png" alt="" style="height: 100px; width: fit-content;"></a>
-        <section style="border: 2px; box-sizing: content-box; border-color: aqua; border-radius: 6px; box-shadow: 2px 2px 3px; ">
-            <H1 style="font-size: 40px;"><B><CENTER>REGISTRATION FORM</CENTER></B></H1>
-            <BR><BR>
-            <form name="fname"  enctype="text/plain">
-                <H3><U>PERSONAL DETAILS:</U></H3>
-                <BR>
-                <div style="width: 100%;">
 
-                    <div style="width: 100%;">
-                        <div style="width: 50%; height: 100px; float: left;">
-                            FIRST NAME &nbsp;&nbsp;<input type="text" name="fname" id="name" >
-                            <BR>
-                            GENDER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT TYPE="RADIO" NAME="GENDER">MALE
-                            <BR>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <INPUT TYPE="RADIO" NAME="GENDER">FEMALE
-                        </div>
-                        <div style="margin-left: 50%; height: 100px;">
-                            LAST NAME &nbsp;&nbsp;<INPUT TYPE="TEXT" NAME="LNAME" MAXLENGTH="100">
-                            <BR>
-                            <label for="DOB">DATE OF BIRTH &nbsp;&nbsp;</label>
-                            <input type="date" id="DOB" name="DOB">
-                        </div>
-                        <br>
-                        ADDRESS &nbsp;&nbsp; <input type="text" name="address" id="address" style="height: 64px; width: 990px;">
-                    </div>
-                <BR>
-                <H3><U>CONTACT DETAILS:</U></H3>
-                <BR>
-                    <div style="width: 100%;">
-                        <div style="width: 50%; height: 80px; float: left;">
-                            EMAIL ID &nbsp;&nbsp;<input type="text" name="email" id="email">
-                        </div>
-                        <div style="margin-left: 50%; height: 80px;">
-                        MOBILE NO. &nbsp;&nbsp; <INPUT TYPE="TEXT" MAXLENGTH="3" STYLE=" width: 70px;" VALUE="+91" disabled>
-                        &nbsp; <input type="text" name="mobile" id="mobile" maxlength="10">
-                        </div>
-                    </div> 
-                    <BR><BR><BR><BR>
-                    <INPUT TYPE="CHECKBOX" NAME="TERMS">&nbsp;&nbsp;I ACCEPT THE TERMS AND CONDITIONS SPECIFIED BY THE ORGANIZATION<BR>
-                    <BR><BR><BR>
-                    <div style="width: 100%;">
-                        <div style="margin-left: 45%; float: left;">
-                        <input type="submit" value="SUBMIT" STYLE="width: 100px; height: 32px; font-weight: bold;">
-                        </div>
-                        <div style="margin-left: 55%;">
-                        <input type="reset" value="RESET" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="header" style="   min-height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative">
+        <a href="#"><img src="images/Logo.png" alt="" style="height: 100px; width: fit-content;"></a>
+        <section
+            style="border: 2px; box-sizing: content-box; border-color: aqua; border-radius: 6px; box-shadow: 2px 2px 3px; ">
+        </section>
+        </header>
+        <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+            <strong>Success!</strong> Your Form request has been submitted successfully.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+            <strong>Error!</strong> Your Form request has not been submitted successfully.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="container">
+            <h1 class="my-3">Registration form</h1>
+            <form class="row g-3">
+                <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                    <div class="invalid-feedback">This is not a valid First name</div>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Last name</label>
+                    <input type="text" class="form-control " id="lastName" required>
+                    <div class="invalid-feedback">This is not a valid Last name</div>
+                    <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault02" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email" required>
+                    <div class="invalid-feedback">This is not a valid Email Address</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefaultUsername" class="form-label">Gender</label>
+                    <select class="form-select " id="Gender" aria-label="Default select example">
+                        <option selected>Select</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                    </select>
+                    <div class="invalid-feedback">This is not a valid name</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Address</label>
+                    <input type="text" class="form-control " id="address" required>
+                    <div class="invalid-feedback">This is not a valid Address</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="validationDefault03" class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" id="phone" required>
+                    <div class="invalid-feedback">This is not a valid Mobile Number</div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input " type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
                         </div>
                     </div>
                 </div>
-            </FORM>
-     </section>
+                <div class="col-12">
+                    <button class="btn btn-primary" id="submit" type="submit">Submit form</button>
+                </div>
+            </form>
+
+        </div>
+        <script src="bodycheckup.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
