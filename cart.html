@@ -24,117 +24,124 @@
          <div class="nav-links" id="navLinks">
             <i class="fas fa-times" onclick="hideMenu()"></i>
             <ul>
-              <input type="text" class="nav-search" placeholder="Search..">
+               <input type="text" class="nav-search" placeholder="Search..">
                <li><a href="index.html"><i class="uil uil-estate"></i> Home</a></li>
                <li><a href="offers.html"><i class="lni lni-offer"></i> Offers</a></li>
-               <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i> Login/ Sign-up</button></li>
+               <li><button class="gbtn" onclick="loginWithGoogle()"><i class="fa fa-fw fa-user"></i> Login/
+                     Sign-up</button></li>
                <li><a href="#"><i class="uil uil-shopping-cart"></i> Cart</a></li>
             </ul>
          </div>
          <script type="text/javascript">
-           function sign() {
-              console.log("sign");
-           }
-        </script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
-  
-        <script>
-           // Your web app's Firebase configuration
-           var firebaseConfig = {
-              apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
-              authDomain: "tcetdev.firebaseapp.com",
-              projectId: "tcetdev",
-              storageBucket: "tcetdev.appspot.com",
-              messagingSenderId: "323333761920",
-              appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
-              measurementId: "G-0KHX2EJ3BR"
-              };
-           // Initialize Firebase
-           firebase.initializeApp(firebaseConfig);
-        </script>
-        <script src="./scripts/auth.js"></script>
-        <script src="./scripts/firestore-db.js"></script>
+            function sign() {
+               console.log("sign");
+            }
+         </script>
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+
+         <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+               apiKey: "AIzaSyCmuvv_ew03FKSvxtVLIc_9OWcH6GjbO1w",
+               authDomain: "tcetdev.firebaseapp.com",
+               projectId: "tcetdev",
+               storageBucket: "tcetdev.appspot.com",
+               messagingSenderId: "323333761920",
+               appId: "1:323333761920:web:0c1ef126c2f6b301c0ef65",
+               measurementId: "G-0KHX2EJ3BR"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+         </script>
+         <script src="./scripts/auth.js"></script>
+         <script src="./scripts/firestore-db.js"></script>
          <i class="fas fa-bars" onclick="showMenu()"></i>
       </nav>
-       <!--Javascript for toggle menu-->
-       <script>
+      <!--Javascript for toggle menu-->
+      <script>
          var navLinks = document.getElementById("navLinks")
-         function showMenu(){
-            navLinks.style.right="0";
+         function showMenu() {
+            navLinks.style.right = "0";
          }
-         function hideMenu(){
-            navLinks.style.right="-200px";
+         function hideMenu() {
+            navLinks.style.right = "-200px";
          }
       </script>
-  <!--cart items details-->
-   <div class="small-container cart-page">
-      <table>
-         <tr>
-            <th>Products</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-         </tr>
-         <tr>
-            <td><div class="cart-info">
-               <img src="images/band-aid.png">
-               <div>
-                  <p>Band-Aid</p>
-                  <small>Price : ₹199</small>
-                  <br>
-                  <a href="">Remove</a>
-            </div>
-            </div></td>
-            <td><input type="number" value="1" min="0"  max="10"></td>
-            <td>₹199</td>
-         </tr>
-         <tr>
-            <td><div class="cart-info">
-               <img src="images/mask.png">
-               <div>
-                  <p>Mask</p>
-                  <small>Price : ₹364</small>
-                  <br>
-                  <a href="">Remove</a>
-            </div>
-            </div></td>
-            <td><input type="number" value="1" min="0"  max="10"></td>
-            <td>₹199</td>
-         </tr>
-         <tr>
-            <td><div class="cart-info">
-               <img src="images/conditioner.jpg">
-               <div>
-                  <p>Conditioner</p>
-                  <small>Price : ₹199</small>
-                  <br>
-                  <a href="">Remove</a>
-            </div>
-            </div></td>
-            <td><input type="number" value="1" min="0" max="10"></td>
-            <td>₹199</td>
-         </tr>
-      </table>
-      <div class="total-price">
+      <!--cart items details-->
+      <div class="small-container cart-page">
          <table>
             <tr>
-               <td>Subtotal</td>
-               <td>₹599</td>
+               <th>Products</th>
+               <th>Quantity</th>
+               <th>Subtotal</th>
             </tr>
             <tr>
-               <td>Tax</td>
-               <td>₹99</td>
+               <td>
+                  <div class="cart-info">
+                     <img src="images/band-aid.png">
+                     <div>
+                        <p>Band-Aid</p>
+                        <small>Price : ₹199</small>
+                        <br>
+                        <a href="">Remove</a>
+                     </div>
+                  </div>
+               </td>
+               <td><input type="number" value="1" min="0" max="10"></td>
+               <td>₹199</td>
             </tr>
             <tr>
-               <td>Subtotal</td>
-               <td>₹698</td>
+               <td>
+                  <div class="cart-info">
+                     <img src="images/mask.png">
+                     <div>
+                        <p>Mask</p>
+                        <small>Price : ₹364</small>
+                        <br>
+                        <a href="">Remove</a>
+                     </div>
+                  </div>
+               </td>
+               <td><input type="number" value="1" min="0" max="10"></td>
+               <td>₹199</td>
+            </tr>
+            <tr>
+               <td>
+                  <div class="cart-info">
+                     <img src="images/conditioner.jpg">
+                     <div>
+                        <p>Conditioner</p>
+                        <small>Price : ₹199</small>
+                        <br>
+                        <a href="">Remove</a>
+                     </div>
+                  </div>
+               </td>
+               <td><input type="number" value="1" min="0" max="10"></td>
+               <td>₹199</td>
             </tr>
          </table>
+         <div class="total-price">
+            <table>
+               <tr>
+                  <td>Subtotal</td>
+                  <td>₹599</td>
+               </tr>
+               <tr>
+                  <td>Tax</td>
+                  <td>₹99</td>
+               </tr>
+               <tr>
+                  <td>Subtotal</td>
+                  <td>₹698</td>
+               </tr>
+            </table>
+         </div>
       </div>
-   </div>
    </section>
 
 

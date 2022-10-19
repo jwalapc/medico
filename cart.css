@@ -52,10 +52,9 @@ nav .fas{
 
 /* SEARCH BAR*/
 .nav-search{
-  width: 200px;
-   border-radius: 15px;
-   border: 1px #000 solid;
-   padding: 5px 5px 5px 25px;
+   width: 200px;
+   border-radius: 5px;
+   padding: 8px 32px 4px 26px;
    top: 0;
    left: 0;
    z-index: 5;
