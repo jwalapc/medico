@@ -8,3 +8,4 @@
 - [Vishal Joshi](https://github.com/knockcat)
 - [Arpit Katiyar](https://github.com/arpit5220)
 - [Nikhil pandey](https://github.com/nikhil-pandey-digital)
+- [Nehal Sharma](https://github.com/nehallsharma)
