@@ -4,6 +4,7 @@
 - [Phantonym21](https://github.com/Phantonym21)
 - [Himanshu Mendapara](https://github.com/himanshu634)
 - [Piyush Gangwar](https://github.com/piyushgangwar)
+- [Thakur Sahab](https://github.com/kaushalsingh584)
 - [Abhishek Singh](https://github.com/Abhivic000)
 - [Aditya Dwivedi](https://github.com/lonewolf0502)
 - [Vishal Joshi](https://github.com/knockcat)
