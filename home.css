@@ -64,6 +64,13 @@ nav .fas {
 .text-slider .text-slider-items .text-slider span {
   color: #2dc2c2;
 }
+.nav-links ul li a:hover{
+   color: darkblue;
+}
+.nav-links ul li button:hover{
+   color: darkblue;
+}
+
 
 .fa-instagram:hover {
   color: rgb(28, 151, 44);
